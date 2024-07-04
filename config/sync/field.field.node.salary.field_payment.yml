@@ -1,0 +1,23 @@
+uuid: b66aec10-1851-4111-a7ee-7c103d24cf26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment
+    - node.type.salary
+id: node.salary.field_payment
+field_name: field_payment
+entity_type: node
+bundle: salary
+label: Payment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10000.0
+  max: 200000.0
+  prefix: ₹
+  suffix: ''
+field_type: decimal

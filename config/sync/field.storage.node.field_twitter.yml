@@ -1,0 +1,19 @@
+uuid: 0d3d20fb-0776-4ca1-ac0c-d7713dd372fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_twitter
+field_name: field_twitter
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

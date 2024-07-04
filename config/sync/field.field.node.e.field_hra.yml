@@ -1,0 +1,23 @@
+uuid: ae11c738-f2a2-4afb-b7a7-7aa55f9e6834
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hra
+    - node.type.e
+id: node.e.field_hra
+field_name: field_hra
+entity_type: node
+bundle: e
+label: HRA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10000.0
+  max: 20000.0
+  prefix: ₹
+  suffix: /Month
+field_type: decimal

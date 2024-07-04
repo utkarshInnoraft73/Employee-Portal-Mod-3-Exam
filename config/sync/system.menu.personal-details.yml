@@ -1,0 +1,8 @@
+uuid: 98a7555a-852a-419b-aa90-1a56539528ae
+langcode: en
+status: true
+dependencies: {  }
+id: personal-details
+label: 'Personal Details'
+description: ''
+locked: false

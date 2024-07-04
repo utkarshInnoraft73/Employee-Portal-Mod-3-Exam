@@ -1,0 +1,33 @@
+uuid: 0135c43f-aad4-470c-825a-76a74da20874
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.ananymous-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: bootstrap_ananymousmenu
+theme: bootstrap
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:ananymous-menu'
+settings:
+  id: 'system_menu_block:ananymous-menu'
+  label: 'Ananymous Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

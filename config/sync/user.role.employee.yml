@@ -1,0 +1,22 @@
+uuid: fbb7dc82-c3d9-40f9-82ba-006b9943e779
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.e
+    - node.type.leave
+  module:
+    - node
+id: employee
+label: Employee
+weight: 5
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'cancel account'
+  - 'change own username'
+  - 'create leave content'
+  - 'delete own leave content'
+  - 'edit own e content'
+  - 'edit own leave content'
+  - 'view e revisions'

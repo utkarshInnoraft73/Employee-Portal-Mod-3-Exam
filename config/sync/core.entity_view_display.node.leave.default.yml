@@ -1,0 +1,57 @@
+uuid: 68f265a6-9846-4931-ac0f-56dd1a8b7a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave.body
+    - field.field.node.leave.field_dote_of_leave
+    - field.field.node.leave.field_employee_name
+    - field.field.node.leave.field_leave_type
+    - node.type.leave
+  module:
+    - datetime
+    - text
+    - user
+id: node.leave.default
+targetEntityType: node
+bundle: leave
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_dote_of_leave:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_leave_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

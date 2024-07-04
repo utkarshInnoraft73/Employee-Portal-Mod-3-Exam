@@ -1,0 +1,25 @@
+uuid: a0484659-2100-4fd5-a3d3-454c6de72a2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.hr-menu
+  module:
+    - system
+  theme:
+    - bootstrap
+id: bootstrap_hrmenu
+theme: bootstrap
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:hr-menu'
+settings:
+  id: 'system_menu_block:hr-menu'
+  label: 'HR Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

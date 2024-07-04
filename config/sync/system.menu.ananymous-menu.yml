@@ -1,0 +1,8 @@
+uuid: 54f6b46b-7956-42d4-b7b4-66825b0b3cad
+langcode: en
+status: true
+dependencies: {  }
+id: ananymous-menu
+label: 'Ananymous Menu'
+description: ''
+locked: false

@@ -1,0 +1,21 @@
+uuid: be5950bc-149b-4087-a8f8-35b27503a40e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.salary
+id: node.salary.field_status
+field_name: field_status
+entity_type: node
+bundle: salary
+label: Status
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Approved
+  off_label: Rejected
+field_type: boolean
