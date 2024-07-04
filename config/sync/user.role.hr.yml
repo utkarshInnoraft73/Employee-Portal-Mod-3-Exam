@@ -1,0 +1,32 @@
+uuid: 1f8fed97-71dc-45a6-a7bf-484830ce6635
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.e
+    - node.type.leave
+    - node.type.salary
+  module:
+    - node
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'cancel account'
+  - 'change own username'
+  - 'create e content'
+  - 'create leave content'
+  - 'create salary content'
+  - 'delete any e content'
+  - 'delete any leave content'
+  - 'delete any salary content'
+  - 'delete own e content'
+  - 'delete own leave content'
+  - 'edit any e content'
+  - 'edit any leave content'
+  - 'edit any salary content'
+  - 'edit own e content'
+  - 'edit own leave content'
+  - 'edit own salary content'

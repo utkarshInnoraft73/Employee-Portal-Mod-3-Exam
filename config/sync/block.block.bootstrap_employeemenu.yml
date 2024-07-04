@@ -1,0 +1,33 @@
+uuid: 76761e8a-659b-4385-b968-5f06d6ca853b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.employee-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: bootstrap_employeemenu
+theme: bootstrap
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:employee-menu'
+settings:
+  id: 'system_menu_block:employee-menu'
+  label: 'Employee Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      employee: employee

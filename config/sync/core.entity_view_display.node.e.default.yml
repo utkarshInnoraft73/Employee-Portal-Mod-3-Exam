@@ -1,0 +1,216 @@
+uuid: 98a11cfb-4c83-46d7-9ac3-36c0a155928b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.e.field_basic_salary
+    - field.field.node.e.field_employee_picture
+    - field.field.node.e.field_hra
+    - field.field.node.e.field_linkedin
+    - field.field.node.e.field_special_allowances
+    - field.field.node.e.field_twitter
+    - field.field.node.e.field_user
+    - field.field.node.e.field_user_role
+    - node.type.e
+    - system.menu.personal-details
+    - views.view.last_leave_taken
+    - views.view.last_salary_processed
+    - views.view.my_profile
+    - views.view.my_profile_link
+  module:
+    - image
+    - layout_builder
+    - link
+    - system
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          715ce511-467e-470e-8171-e8a2ee9241fe:
+            uuid: 715ce511-467e-470e-8171-e8a2ee9241fe
+            region: first
+            configuration:
+              id: 'system_menu_block:personal-details'
+              label: 'Personal Details'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 1
+            additional: {  }
+          adacbd75-dc89-41e2-a38c-e43e876f91dd:
+            uuid: adacbd75-dc89-41e2-a38c-e43e876f91dd
+            region: third
+            configuration:
+              id: 'views_block:last_salary_processed-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          efe2d202-2406-420a-b487-4948c18b8369:
+            uuid: efe2d202-2406-420a-b487-4948c18b8369
+            region: second
+            configuration:
+              id: 'views_block:my_profile-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c80f75b2-a6c0-4dd3-9aa7-c6f535beb34d:
+            uuid: c80f75b2-a6c0-4dd3-9aa7-c6f535beb34d
+            region: third
+            configuration:
+              id: 'views_block:last_leave_taken-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          b6b223c9-9ad4-4032-88e7-754216d1abb7:
+            uuid: b6b223c9-9ad4-4032-88e7-754216d1abb7
+            region: first
+            configuration:
+              id: 'views_block:my_profile_link-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          43fc9831-2c9b-4a40-812d-439ebd68350f:
+            uuid: 43fc9831-2c9b-4a40-812d-439ebd68350f
+            region: second
+            configuration:
+              id: 'field_block:node:e:field_user'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.e.default
+targetEntityType: node
+bundle: e
+mode: default
+content:
+  field_basic_salary:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_employee_picture:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_hra:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_linkedin:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_special_allowances:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_twitter:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: second
+  field_user_role:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

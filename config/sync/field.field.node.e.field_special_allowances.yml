@@ -1,0 +1,23 @@
+uuid: b932c90d-2cef-470e-9250-9dec5fd0e986
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_allowances
+    - node.type.e
+id: node.e.field_special_allowances
+field_name: field_special_allowances
+entity_type: node
+bundle: e
+label: 'Special Allowances'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10000.0
+  max: 20000.0
+  prefix: ₹
+  suffix: /Month
+field_type: decimal

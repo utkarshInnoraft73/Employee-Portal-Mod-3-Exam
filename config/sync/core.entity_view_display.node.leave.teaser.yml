@@ -1,0 +1,36 @@
+uuid: 67e17d99-ca07-4821-b19d-d45f018e39af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.leave.body
+    - field.field.node.leave.field_dote_of_leave
+    - field.field.node.leave.field_employee_name
+    - field.field.node.leave.field_leave_type
+    - node.type.leave
+  module:
+    - text
+    - user
+id: node.leave.teaser
+targetEntityType: node
+bundle: leave
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_dote_of_leave: true
+  field_employee_name: true
+  field_leave_type: true

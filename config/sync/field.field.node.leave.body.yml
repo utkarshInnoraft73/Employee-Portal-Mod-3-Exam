@@ -1,0 +1,24 @@
+uuid: 9f024924-7c3a-4f41-a2a9-a008020e0432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.leave
+  module:
+    - text
+id: node.leave.body
+field_name: body
+entity_type: node
+bundle: leave
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

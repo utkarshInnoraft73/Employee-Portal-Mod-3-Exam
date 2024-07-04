@@ -1,0 +1,21 @@
+uuid: e1282f7c-6ebb-44ae-905d-85eaaaf50012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dote_of_leave
+    - node.type.leave
+  module:
+    - datetime
+id: node.leave.field_dote_of_leave
+field_name: field_dote_of_leave
+entity_type: node
+bundle: leave
+label: 'Dote of Leave'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

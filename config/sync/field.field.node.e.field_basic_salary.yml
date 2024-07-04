@@ -1,0 +1,23 @@
+uuid: d0ee3208-3d03-4cdd-8d92-3009840dffbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic_salary
+    - node.type.e
+id: node.e.field_basic_salary
+field_name: field_basic_salary
+entity_type: node
+bundle: e
+label: 'Basic salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10000.0
+  max: 200000.0
+  prefix: ₹
+  suffix: /Month
+field_type: decimal
